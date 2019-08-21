@@ -7,6 +7,7 @@ import Fader from "react-fader"
 import {createBrowserHistory} from "history"
 import ReactGoogleAnalytics from "react-ga"
 import ensureArray from "ensure-array"
+import Header from "components/Header"
 
 import "fork-awesome/css/fork-awesome.min.css"
 
