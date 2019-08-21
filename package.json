@@ -1,6 +1,6 @@
 {
-  "title": "Amazoom",
-  "domain": "amazoom.jaid.codes",
+  "title": "Preisfarm",
+  "domain": "preis.farm",
   "description": "Modern shopping price tracker.",
   "private": true,
   "webpackConfigJaid": "webapp",
