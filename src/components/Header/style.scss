@@ -1,0 +1,64 @@
+.container {
+  margin-bottom: 40px;
+}
+
+.icon {
+  width         : 3em;
+  vertical-align: middle;
+}
+
+.title {
+  vertical-align: middle;
+  font-family   : Hind, sans-serif;
+  line-height   : 80%;
+  font-size     : 32px;
+  text-transform: uppercase;
+  display       : inline-grid;
+
+  &:hover>.entity {
+    color: rgb(204, 74, 243);
+  }
+
+  &:hover>.works {
+    color: rgb(79, 216, 79);
+  }
+}
+
+.entity {
+  color: rgb(139, 27, 173);
+}
+
+.works {
+  color: rgb(45, 133, 45);
+}
+
+.nav {
+  display    : inline-flex;
+  float      : right;
+  align-items: center;
+  flex-wrap  : wrap;
+
+  >* {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    display: inline-block;
+  }
+
+  .nav {
+    float          : unset;
+    width          : 100vw;
+    justify-content: space-around;
+
+    >* {
+      font-size: 130%;
+    }
+  }
+
+  .container {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,43 @@
+.container {
+  background: black;
+}
+
+.banner {
+  width        : 180px;
+  height       : 120px;
+  width        : 100%;
+  height       : auto;
+  margin-bottom: -2.5em;
+  padding      : 4px;
+  user-select  : none;
+
+  &:hover~.title {
+    opacity: 0;
+  }
+}
+
+.title {
+  pointer-events: none;
+  transition    : opacity 0.1s;
+  user-select   : none;
+  font-size     : 28px;
+  margin-left   : 0.35em;
+  text-shadow   : 0 0 3px black, 0 0 10px black;
+  text-align    : left;
+  color         : white;
+  text-transform: uppercase;
+  font-family   : Hind,
+    sans-serif
+}
+
+.content {
+  text-align    : left;
+  padding-left  : 0.5em;
+  padding-right : 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.perk {
+  margin-top   : 4px;
+  margin-bottom: 4px;
+}
