@@ -1,2 +1,0 @@
-Unlocks potential in one's aura reading ability.
-Chests' auras are revealed to you when standing within {tiers:16/24/32} meters of range. Grants a considerably better chance at finding an Item of a higher rarity from Chests.

@@ -1,6 +1,7 @@
 {
-  "title": "Entity Works",
-  "domain": "entity.works",
+  "title": "Amazoom",
+  "domain": "amazoom.jaid.codes",
+  "description": "Modern shopping price tracker.",
   "private": true,
   "webpackConfigJaid": "webapp",
   "version": "0.1.0",
@@ -14,6 +15,7 @@
     "camel-case": "^3.0.0",
     "classnames": "^2.2.6",
     "debug": "^4.1.1",
+    "ensure-array": "^1.0.0",
     "filter-nil": "^1.0.0",
     "fork-awesome": "^1.1.7",
     "has-content": "^1.1.0",

@@ -1,17 +1,3 @@
-.container {}
+.container {
 
-.linkList {
-  display       : flex;
-  flex-direction: column;
-}
-
-@media only screen and (max-width: 768px) {
-  .linkList {
-    align-items: center;
-  }
-
-  .link {
-    font-size: 130%;
-    padding  : 0.5em;
-  }
 }

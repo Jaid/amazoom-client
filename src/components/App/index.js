@@ -1,13 +1,12 @@
 import React from "react"
 import DocumentTitle from "react-document-title"
 import {Route, Router} from "react-router-dom"
-import Header from "components/Header"
 import ReactRouterScrollTop from "react-router-scroll-top"
-import {ensureArray} from "magina"
 import Switch from "react-router-transition-switch"
 import Fader from "react-fader"
 import {createBrowserHistory} from "history"
 import ReactGoogleAnalytics from "react-ga"
+import ensureArray from "ensure-array"
 
 import "fork-awesome/css/fork-awesome.min.css"
 

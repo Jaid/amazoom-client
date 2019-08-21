@@ -1,1 +1,0 @@
-Your great strength allows you to shred through your prey's defences. Destroy dropped Pallets and damage generators {tiers:10%/15%/20%} faster.
