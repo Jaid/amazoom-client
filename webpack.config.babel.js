@@ -9,6 +9,7 @@ export default configure({
   robots: true,
   icon: path.join(__dirname, "icon.png"),
   backgroundColor: "#580000",
+  sitemap: true,
   extra: {
     plugins: [
       new EnvironmentPlugin({
