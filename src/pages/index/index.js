@@ -1,6 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
+import {connect} from "react-redux"
+import emitPromise from "emit-promise"
+import socket from "lib/socketMiddleware"
+import ProductBlock from "components/ProductBlock"
 
 import css from "./style.scss"
 
@@ -14,6 +18,12 @@ import css from "./style.scss"
   *  },
   * }} Props
   */
+
+@connect(null, dispatch => ({
+  fetch: () => dispatch({
+    type: "@@socket/send/getOverview",
+  }),
+}))
 
 /**
   * @class
@@ -31,10 +41,24 @@ export default class IndexPage extends React.Component {
     className: PropTypes.any,
   }
 
+  state = {}
+
+  componentDidMount() {
+    const fetchJob = emitPromise.withDefaultTimeout(socket, "getOverview")
+    fetchJob.then(data => {
+      this.setState({data})
+    }).catch(error => {
+      console.log(error)
+    })
+  }
+
   render() {
-    const content = <span>{process.env.socketUrl}</span>
+    if (!this.state.data) {
+      return "..."
+    }
+    const productList = this.state.data.map((productState, index) => <ProductBlock key={index} title={productState["Product.title"]} {...productState}/>)
     return <main className={classnames(css.container, this.props.className)}>
-      {content}
+      <div className={css.productList}>{productList}</div>
     </main>
   }
 

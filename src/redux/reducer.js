@@ -1,9 +1,12 @@
 import immer from "immer"
 import {combineReducers} from "redux"
 import query from "src/query"
-import {socketReducer} from "lib/socketMiddleware"
+import {socketMiddleware} from "lib/socketMiddleware"
 
 const mainReducer = (state, action) => {
+  if (action.type === "@@socket/received/hey") {
+    console.log("hey received")
+  }
   if (!state) {
     return {
     }
@@ -13,5 +16,5 @@ const mainReducer = (state, action) => {
 
 export default combineReducers({
   main: mainReducer,
-  socket: socketReducer,
+  socket: socketMiddleware.reducer,
 })
