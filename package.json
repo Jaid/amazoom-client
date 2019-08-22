@@ -32,7 +32,9 @@
     "react-router-transition-switch": "^1.1.1",
     "react-string-replace": "^0.4.4",
     "redux": "^4.0.4",
-    "redux-action": "^1.2.2"
+    "redux-action": "^1.2.2",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^2.2.0"
   },
   "devDependencies": {
     "@absolunet/fsp": "^1.6.1",

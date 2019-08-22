@@ -32,7 +32,7 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
-    const content = <span>Page index</span>
+    const content = <span>{process.env.socketUrl}</span>
     return <main className={classnames(css.container, this.props.className)}>
       {content}
     </main>

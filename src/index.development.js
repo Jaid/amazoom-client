@@ -5,15 +5,22 @@ import {Provider} from "react-redux"
 import {createStore, applyMiddleware} from "redux"
 import {createLogger} from "redux-logger"
 import {composeWithDevTools} from "redux-devtools-extension"
+import thunk from "redux-thunk"
+import socketMiddleware from "lib/socketMiddleware"
 
 import reducer from "./redux/reducer"
 
+const socketManager = socketMiddleware({
+  url: process.env.socketUrl,
+  events: {
+    hey: true,
+  },
+})
 const logger = createLogger({
   level: "info",
   collapsed: true,
 })
-const enhancer = composeWithDevTools(applyMiddleware(logger))
-const store = createStore(reducer, enhancer)
+const store = createStore(reducer, applyMiddleware(thunk, socketManager, logger) |> composeWithDevTools)
 if (module.hot) {
   module.hot.accept("./redux/reducer", () => store.replaceReducer(require("./redux/reducer").default))
 }
