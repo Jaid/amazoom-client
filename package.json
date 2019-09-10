@@ -44,7 +44,7 @@
     "acorn": "^7.0.0",
     "ajv": "^6.10.2",
     "babel-jest": "^24.9.0",
-    "babel-preset-jaid": "^6.9.3",
+    "babel-preset-jaid": "^6.9.4",
     "browserslist-config-jaid-web": "^2.3.0",
     "caniuse-lite": "^1.0.30000989",
     "change-case": "^3.1.0",
@@ -56,7 +56,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.0",
-    "webpack-config-jaid": "^5.27.8"
+    "webpack-config-jaid": "^5.27.9"
   },
   "scripts": {
     "clean": "rimraf dist/",
