@@ -15,7 +15,7 @@ class IndexPage extends React.Component {
   static propTypes = propTypes
 
   render() {
-    const productList = this.props.data.map((productState, index) => <ProductBlock key={index} title={productState["Product.title"]} {...productState}/>)
+    const productList = this.props.data.map((productState, index) => <ProductBlock key={index} productId={productState["Product.id"]} title={productState["Product.title"]} {...productState}/>)
     return <main className={css.container}>
       <div className={css.productList}>{productList}</div>
     </main>

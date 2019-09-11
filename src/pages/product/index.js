@@ -1,5 +1,6 @@
 import React from "react"
 import setupPage, {propTypes} from "src/pages/setupPage"
+import DocumentTitle from "react-document-title"
 
 import css from "./style.scss"
 
@@ -17,9 +18,11 @@ class ProductPage extends React.Component {
   static propTypes = propTypes
 
   render() {
-    return <main className={css.container}>
-      <div className={css.productList}>{this.props.data.title}</div>
-    </main>
+    return <DocumentTitle title={this.props.data.title}>
+      <main className={css.container}>
+        <div className={css.productList}>{this.props.data.title}</div>
+      </main>
+    </DocumentTitle>
   }
 
 }

@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
+import {Link} from "react-router-dom"
 
 import css from "./style.scss"
 
@@ -27,11 +28,12 @@ export default class ProductBlock extends React.Component {
     price: PropTypes.number,
     currency: PropTypes.string,
     platform: PropTypes.string,
+    productId: PropTypes.number,
   }
 
   render() {
     return <div className={classnames(css.container, this.props.className)}>
-      <div>{this.props.title}</div>
+      <Link to={`/product/${this.props.productId}`}><div>{this.props.title}</div></Link>
       <div>{this.props.price / 100} {this.props.currency} on {this.props.platform}</div>
     </div>
   }

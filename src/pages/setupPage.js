@@ -29,6 +29,7 @@ export default socketCommand => Component => {
       fetchJob = emitPromise.withDefaultTimeout(socket, this.socketCommand.event, this.socketCommand.payload)
     }
     fetchJob.then(data => {
+      console.log(data)
       this.setState({data})
     }).catch(error => {
       console.log(error)
