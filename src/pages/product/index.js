@@ -18,9 +18,11 @@ class ProductPage extends React.Component {
   static propTypes = propTypes
 
   render() {
+    const stateBlocks = this.props.data.ProductStates.map(({platform, currency, title, price}) => <div key={platform}>{platform}: {title} {price / 100} {currency}</div>)
     return <DocumentTitle title={this.props.data.title}>
       <main className={css.container}>
         <div className={css.productList}>{this.props.data.title}</div>
+        {stateBlocks}
       </main>
     </DocumentTitle>
   }
