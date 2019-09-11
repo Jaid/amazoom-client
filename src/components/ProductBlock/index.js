@@ -28,12 +28,12 @@ export default class ProductBlock extends React.Component {
     price: PropTypes.number,
     currency: PropTypes.string,
     platform: PropTypes.string,
-    productId: PropTypes.number,
+    Product: PropTypes.object,
   }
 
   render() {
     return <div className={classnames(css.container, this.props.className)}>
-      <Link to={`/product/${this.props.productId}`}><div>{this.props.title}</div></Link>
+      <Link to={`/product/${this.props.Product.id}`}><div>{this.props.Product.title}</div></Link>
       <div>{this.props.price / 100} {this.props.currency} on {this.props.platform}</div>
     </div>
   }
