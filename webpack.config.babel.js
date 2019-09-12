@@ -13,7 +13,7 @@ export default configure({
   extra: {
     plugins: [
       new EnvironmentPlugin({
-        socketUrl: "http://localhost:17561",
+        backendHost: "http://localhost:17561",
       }),
     ],
   },

@@ -4,7 +4,7 @@ import createSockMiddleware from "redux-sock"
  * @type {import("redux").Middleware}
  */
 const middleware = createSockMiddleware({
-  url: process.env.socketUrl,
+  url: process.env.backendHost,
   events: ["hey"],
 })
 
