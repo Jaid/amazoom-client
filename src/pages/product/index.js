@@ -4,6 +4,11 @@ import DocumentTitle from "react-document-title"
 
 import css from "./style.scss"
 
+@setupPage(props => ({
+  event: "product",
+  payload: props.match.params.id,
+}))
+
 /**
   * @class
   * @extends {React.Component}
@@ -24,7 +29,4 @@ class ProductPage extends React.Component {
 
 }
 
-export default setupPage(props => ({
-  event: "product",
-  payload: props.match.params.id,
-}))(ProductPage)
+export default ProductPage

@@ -4,6 +4,8 @@ import setupPage, {propTypes} from "src/pages/setupPage"
 
 import css from "./style.scss"
 
+@setupPage("getOverview")
+
 /**
   * @class
   * @extends {React.Component}
@@ -21,4 +23,4 @@ class IndexPage extends React.Component {
 
 }
 
-export default setupPage("getOverview")(IndexPage)
+export default IndexPage
