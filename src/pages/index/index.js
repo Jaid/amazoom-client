@@ -1,12 +1,11 @@
 import React from "react"
 import ProductBlock from "components/ProductBlock"
 import setupPage, {propTypes} from "src/pages/setupPage"
-import {connect} from "react-redux"
 
 import css from "./style.scss"
 
-@connect(null, null)
-export default class IndexPage extends React.Component {
+@setupPage("getOverview")
+export default class extends React.Component {
 
   static propTypes = propTypes
 
