@@ -7,7 +7,7 @@ import {isFunction} from "lodash"
 import ensureObject from "ensure-object"
 
 export default socketCommand => Component => {
-  class FetchingPage extends React.Component {
+  const FetchingPage = class extends React.Component {
 
     constructor(props) {
       super(props)
