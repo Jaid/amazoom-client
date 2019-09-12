@@ -30,6 +30,7 @@ export default class Header extends React.Component {
   render() {
     return <div className={classnames(css.container, this.props.className)}>
       <Link to="/"><img className={css.icon} src={icon}/></Link>
+      <a href={`//${process.env.backendHost}/auth/twitch`}>Login</a>
     </div>
   }
 
