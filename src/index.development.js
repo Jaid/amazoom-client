@@ -7,6 +7,7 @@ import {createLogger} from "redux-logger"
 import {composeWithDevTools} from "redux-devtools-extension"
 import thunk from "redux-thunk"
 import {socketMiddleware} from "lib/socketMiddleware"
+import loginManager from "lib/loginManagerInstance"
 
 import reducer from "./redux/reducer"
 
@@ -14,7 +15,7 @@ const logger = createLogger({
   level: "info",
   collapsed: true,
 })
-const store = createStore(reducer, applyMiddleware(thunk, socketMiddleware, logger) |> composeWithDevTools)
+const store = createStore(reducer, applyMiddleware(thunk, socketMiddleware, loginManager.getMiddleware(), logger) |> composeWithDevTools)
 if (module.hot) {
   module.hot.accept("./redux/reducer", () => store.replaceReducer(require("./redux/reducer").default))
 }

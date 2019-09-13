@@ -1,7 +1,6 @@
-import immer from "immer"
 import {combineReducers} from "redux"
-import query from "src/query"
 import {socketMiddleware} from "lib/socketMiddleware"
+import loginManager from "lib/loginManagerInstance"
 
 const mainReducer = (state, action) => {
   if (action.type === "@@socket/received/hey") {
@@ -17,4 +16,5 @@ const mainReducer = (state, action) => {
 export default combineReducers({
   main: mainReducer,
   socket: socketMiddleware.reducer,
+  login: loginManager.getReducer(),
 })

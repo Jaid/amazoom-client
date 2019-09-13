@@ -5,10 +5,11 @@ import {Provider} from "react-redux"
 import {createStore, applyMiddleware} from "redux"
 import thunk from "redux-thunk"
 import {socketMiddleware} from "lib/socketMiddleware"
+import loginManager from "lib/loginManagerInstance"
 
 import reducer from "./redux/reducer"
 
-const store = createStore(reducer, applyMiddleware(thunk, socketMiddleware))
+const store = createStore(reducer, applyMiddleware(thunk, socketMiddleware, loginManager.getMiddleware()))
 
 const rootNode = document.createElement("div")
 document.body.append(rootNode)

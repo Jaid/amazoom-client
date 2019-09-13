@@ -6,7 +6,7 @@ import {isFunction} from "lodash"
 import ensureObject from "ensure-object"
 
 export default socketCommand => {
-  return function (TargetComponent) {
+  return function setupPage(TargetComponent) {
     return class extends React.Component {
 
       displayName = `setupPage(${TargetComponent.displayName || TargetComponent.name || "Component"})`

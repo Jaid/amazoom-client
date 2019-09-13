@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import icon from "root/icon.png"
 import {Link} from "react-router-dom"
+import {connect} from "react-redux"
+import LoginBox from "components/LoginBox"
 
 import css from "./style.scss"
 
@@ -11,6 +13,10 @@ import css from "./style.scss"
   *  className: *
   * }} Props
   */
+
+@connect(state => ({
+  loginInfo: state.login,
+}))
 
 /**
   * @class
@@ -30,7 +36,10 @@ export default class Header extends React.Component {
   render() {
     return <div className={classnames(css.container, this.props.className)}>
       <Link to="/"><img className={css.icon} src={icon}/></Link>
-      <a href={`//${process.env.backendHost}/auth/twitch`}>Login</a>
+      <LoginBox/>
+      {/* {this.props.loginInfo.authUrl && !this.props.loginInfo.loggedIn
+       && <a href={this.props.loginInfo.authUrl}>Login</a>
+      } */}
     </div>
   }
 

@@ -8,7 +8,7 @@ import {createBrowserHistory} from "history"
 import ReactGoogleAnalytics from "react-ga"
 import ensureArray from "ensure-array"
 import Header from "components/Header"
-
+import loginManager from "lib/loginManagerInstance"
 import "fork-awesome/css/fork-awesome.min.css"
 
 import routes from "./routes.yml"
@@ -24,6 +24,8 @@ if (GOOGLE_ANALYTICS_TRACKING_ID) {
     ReactGoogleAnalytics.pageview(location.pathname)
   })
 }
+
+const CallbackRoute = loginManager.getCallbackRoute()
 
 export default class App extends React.Component {
 
@@ -41,6 +43,7 @@ export default class App extends React.Component {
             <Header/>
             <Switch component={Fader}>
               {routeBlocks}
+              {CallbackRoute}
             </Switch>
           </ReactRouterScrollTop>
         </Router>
