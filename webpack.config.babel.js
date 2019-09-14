@@ -13,7 +13,7 @@ export default configure({
   extra: {
     plugins: [
       new EnvironmentPlugin({
-        backendHost: "http://localhost:17561",
+        backendHost: "server.preis.farm",
       }),
     ],
   },
