@@ -20,7 +20,9 @@ import css from "./style.scss"
   displayName: state.login.displayName,
   authUrl: state.login.authUrl,
 }))
-export default class LoginBox extends React.Component {
+export default class extends React.Component {
+
+  displayName = "LoginBox"
 
   static propTypes = {
     className: PropTypes.oneOfType([

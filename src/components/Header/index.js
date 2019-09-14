@@ -17,12 +17,9 @@ import css from "./style.scss"
 @connect(state => ({
   loginInfo: state.login,
 }))
+export default class extends React.Component {
 
-/**
-  * @class
-  * @extends {React.Component<Props>}
-  */
-export default class Header extends React.Component {
+  displayName = "Header"
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -37,9 +34,6 @@ export default class Header extends React.Component {
     return <div className={classnames(css.container, this.props.className)}>
       <Link to="/"><img className={css.icon} src={icon}/></Link>
       <LoginBox/>
-      {/* {this.props.loginInfo.authUrl && !this.props.loginInfo.loggedIn
-       && <a href={this.props.loginInfo.authUrl}>Login</a>
-      } */}
     </div>
   }
 
