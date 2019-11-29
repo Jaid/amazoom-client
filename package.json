@@ -2,7 +2,6 @@
   "title": "Preisfarm",
   "domain": "preis.farm",
   "description": "Modern shopping price tracker.",
-  "private": true,
   "webpackConfigJaid": "webapp",
   "version": "1.5.2",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
@@ -63,5 +62,6 @@
     "start": "backendHost=127.0.0.1:17561 webpackPort=1212 START_HOT=1 NODE_ENV=development webpack-dev-server",
     "build:prod": "NODE_ENV=production webpack",
     "build:dev": "NODE_ENV=development webpack"
-  }
+  },
+  "name": "preis-farm"
 }
