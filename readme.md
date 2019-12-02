@@ -1,3 +1,7 @@
-## Preisfarm
+# Preisfarm
+
+
+Modern shopping price tracker.
+
 
 
