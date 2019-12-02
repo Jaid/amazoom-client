@@ -4,7 +4,6 @@ import {EnvironmentPlugin} from "webpack"
 import configure from "webpack-config-jaid"
 
 export default configure({
-  publishimo: {fetchGithub: true},
   googleAnalyticsTrackingId: "UA-51563406-8",
   robots: true,
   icon: path.join(__dirname, "icon.png"),
