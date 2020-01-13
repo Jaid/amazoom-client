@@ -65,5 +65,9 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "preis-farm",
-  "funding": "https://github.com/sponsors/jaid"
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/preis-farm"
+  }
 }
