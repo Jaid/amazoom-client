@@ -1,11 +1,10 @@
 # Preisfarm
 
 
-<a href="https://raw.githubusercontent.com/Jaid/preis-farm/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/preis-farm?style=flat-square" alt="License"/></a>  
-<a href="https://actions-badge.atrox.dev/Jaid/preis-farm/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fpreis-farm%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/preis-farm/commits"><img src="https://img.shields.io/github/commits-since/Jaid/preis-farm/v1.5.2?style=flat-square&logo=github" alt="Commits since v1.5.2"/></a> <a href="https://github.com/Jaid/preis-farm/commits"><img src="https://img.shields.io/github/last-commit/Jaid/preis-farm?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/preis-farm/issues"><img src="https://img.shields.io/github/issues/Jaid/preis-farm?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://raw.githubusercontent.com/jaid/preis-farm/master/license.txt"><img src="https://img.shields.io/github/license/jaid/preis-farm?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor preis-farm"/></a>
+<a href="https://actions-badge.atrox.dev/jaid/preis-farm/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Fpreis-farm%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/preis-farm/commits"><img src="https://img.shields.io/github/commits-since/jaid/preis-farm/v1.5.2?style=flat-square&logo=github" alt="Commits since v1.5.2"/></a> <a href="https://github.com/jaid/preis-farm/commits"><img src="https://img.shields.io/github/last-commit/jaid/preis-farm?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/preis-farm/issues"><img src="https://img.shields.io/github/issues/jaid/preis-farm?style=flat-square&logo=github" alt="Issues"/></a>  
 
 **Amazon price tracker frontend.**
-
 
 
 
@@ -34,7 +33,7 @@
 
 Setting up:
 ```bash
-git clone git@github.com:Jaid/preis-farm.git
+git clone git@github.com:jaid/preis-farm.git
 cd preis-farm
 npm install
 ```
