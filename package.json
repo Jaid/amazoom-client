@@ -64,5 +64,6 @@
     "build:dev": "NODE_ENV=development webpack",
     "prepareActionJest": "npm run build:prod"
   },
-  "name": "preis-farm"
+  "name": "preis-farm",
+  "funding": "https://github.com/sponsors/jaid"
 }
