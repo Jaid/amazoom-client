@@ -42,7 +42,7 @@
     "@absolunet/fsp": "^1.6.2",
     "@hot-loader/react-dom": "^16.13.0",
     "acorn": "^7.1.1",
-    "ajv": "^6.12.0",
+    "ajv": "^6.12.3",
     "babel-preset-jaid": "^8.0.0",
     "browserslist-config-jaid-web": "^2.3.0",
     "caniuse-lite": "^1.0.30001042",
