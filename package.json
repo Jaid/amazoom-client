@@ -19,7 +19,7 @@
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
     "modern-normalize": "^0.6.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "query-string": "^6.12.1",
     "react": "^16.13.1",
     "react-autosuggest": "^10.0.0",
